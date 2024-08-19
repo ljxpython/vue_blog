@@ -34,7 +34,7 @@ export default hopeTheme({
 
   // 页脚
   footer: footerICP_HTML,
-  displayFooter: true,
+  displayFooter: false,
 
   // 博客相关
   blog: {
