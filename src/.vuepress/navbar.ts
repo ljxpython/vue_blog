@@ -14,7 +14,7 @@ export default navbar([
         prefix: "apple/",
         children: [
           { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
+          { text: "苹果3", icon: "pen-to-square", link: "2" },
           "3",
           "4",
         ],
@@ -25,7 +25,7 @@ export default navbar([
         prefix: "banana/",
         children: [
           {
-            text: "香蕉 1",
+            text: "香蕉 14",
             icon: "pen-to-square",
             link: "1",
           },
