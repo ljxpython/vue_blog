@@ -7,7 +7,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "测试漫游记",
-  description: "探索和分享测试开发相关知识，和你说一说我的测试找那个的感悟",
+  description: "探索和分享测试开发相关知识",
 
   theme,
 

@@ -18,6 +18,12 @@ export default hopeTheme({
     url: "https://github.com/ljxpython",
   },
 
+  navbarLayout: {
+      start: ["Brand"],
+      center: ["Links"],
+      end: ["Language", "Repo", "Outlook", "Search"],
+    },
+
   iconAssets: "fontawesome-with-brands",
 
   logo: "face.png",
@@ -40,7 +46,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "",
+    description: "励志做一个什么都会的测试小垃圾",
     intro: "/intro.html",
     medias: {
       // Baidu: "https://example.com",
@@ -49,12 +55,12 @@ export default hopeTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      // Email: "mailto:info@example.com",
+      Email: "mailto:1030470148@qq.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
-      // Gitee: "https://example.com",
-      // GitHub: "https://example.com",
+      // Gitee: "https://gitee.com/lijiaxintest",
+      GitHub: "https://github.com/ljxpython",
       // Gitlab: "https://example.com",
       // Gmail: "mailto:info@example.com",
       // Instagram: "https://example.com",

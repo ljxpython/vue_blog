@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
+title: 首页
 heroImage: face.png
 heroText: 夹心巧克力杂谈--一个测试小白的成长记
 heroFullScreen: true
