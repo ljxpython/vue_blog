@@ -1,5 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-
+import { enNavbar, zhNavbar } from './navbar/index.js';
+import { enSidebar, zhSidebar } from './sidebar/index.js';
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
@@ -12,16 +13,7 @@ const footerICP_HTML = `
 
 export default hopeTheme({
   hostname: "https://github.com/ljxpython",
-  // head: [
-  //   [
-  //     "link",
-  //     {
-  //       rel: "icon",
-  //       href: "face.png",
-  //     },
-  //   ],
 
-  // ],
 
   author: {
     name: "Lee JiaXin",
@@ -35,11 +27,15 @@ export default hopeTheme({
       end: ["Search","Links","Language", "Repo", "Outlook" ],
     },
 
-  // iconAssets: "fontawesome-with-brands",
+
 
   logo: "face.png",
 
-  iconAssets: '//at.alicdn.com/t/c/font_3855310_agk3ojvaptw.css',
+  iconAssets: [
+    "/fontawesome-with-brands.css",
+    '//at.alicdn.com/t/c/font_3855310_agk3ojvaptw.css'
+  
+  ],
 
   repo: "ljxpython/vue_blog.git",
 
@@ -48,57 +44,95 @@ export default hopeTheme({
   fullscreen: true,
 
   // 导航栏
-  navbar,
+  // navbar,
 
   // 侧边栏
-  sidebar,
+  // sidebar,
 
   // 页脚
   footer: footerICP_HTML,
   displayFooter: false,
 
-  // 博客相关
-  blog: {
+    locales: {
+    '/': {
+      navbar: zhNavbar,
+      sidebar: zhSidebar,
+      blog: {
     description: "励志做一个什么都会的测试小垃圾",
     intro: "/intro.html",
     medias: {
-      // Baidu: "https://example.com",
-      // BiliBili: "https://example.com",
-      // Bitbucket: "https://example.com",
-      // Dingding: "https://example.com",
-      // Discord: "https://example.com",
-      // Dribbble: "https://example.com",
       Email: "mailto:1030470148@qq.com",
-      // Evernote: "https://example.com",
-      // Facebook: "https://example.com",
-      // Flipboard: "https://example.com",
       // Gitee: "https://gitee.com/lijiaxintest",
       GitHub: "https://github.com/ljxpython",
-      // Gitlab: "https://example.com",
-      // Gmail: "mailto:info@example.com",
-      // Instagram: "https://example.com",
-      // Lark: "https://example.com",
-      // Lines: "https://example.com",
-      // Linkedin: "https://example.com",
-      // Pinterest: "https://example.com",
-      // Pocket: "https://example.com",
-      // QQ: "https://example.com",
-      // Qzone: "https://example.com",
-      // Reddit: "https://example.com",
-      // Rss: "https://example.com",
-      // Steam: "https://example.com",
-      // Twitter: "https://example.com",
-      // Wechat: "https://example.com",
-      // Weibo: "https://example.com",
-      // Whatsapp: "https://example.com",
-      // Youtube: "https://example.com",
-      // Zhihu: "https://example.com",
       VuePressThemeHope: {
         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
         link: "https://theme-hope.vuejs.press",
       },
     },
   },
+    },
+
+    '/en/': {
+      navbar: enNavbar,
+      sidebar: enSidebar,
+      blog: {
+    description: "To be a test developer who can do anything",
+    intro: "/intro.html",
+    medias: {
+      Email: "mailto:1030470148@qq.com",
+      // Gitee: "https://gitee.com/lijiaxintest",
+      GitHub: "https://github.com/ljxpython",
+      VuePressThemeHope: {
+        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        link: "https://theme-hope.vuejs.press",
+      },
+    },
+  },
+    },
+  },
+
+  // 博客相关
+  // blog: {
+  //   description: "励志做一个什么都会的测试小垃圾",
+  //   intro: "/intro.html",
+  //   medias: {
+  //     // Baidu: "https://example.com",
+  //     // BiliBili: "https://example.com",
+  //     // Bitbucket: "https://example.com",
+  //     // Dingding: "https://example.com",
+  //     // Discord: "https://example.com",
+  //     // Dribbble: "https://example.com",
+  //     Email: "mailto:1030470148@qq.com",
+  //     // Evernote: "https://example.com",
+  //     // Facebook: "https://example.com",
+  //     // Flipboard: "https://example.com",
+  //     // Gitee: "https://gitee.com/lijiaxintest",
+  //     GitHub: "https://github.com/ljxpython",
+  //     // Gitlab: "https://example.com",
+  //     // Gmail: "mailto:info@example.com",
+  //     // Instagram: "https://example.com",
+  //     // Lark: "https://example.com",
+  //     // Lines: "https://example.com",
+  //     // Linkedin: "https://example.com",
+  //     // Pinterest: "https://example.com",
+  //     // Pocket: "https://example.com",
+  //     // QQ: "https://example.com",
+  //     // Qzone: "https://example.com",
+  //     // Reddit: "https://example.com",
+  //     // Rss: "https://example.com",
+  //     // Steam: "https://example.com",
+  //     // Twitter: "https://example.com",
+  //     // Wechat: "https://example.com",
+  //     // Weibo: "https://example.com",
+  //     // Whatsapp: "https://example.com",
+  //     // Youtube: "https://example.com",
+  //     // Zhihu: "https://example.com",
+  //     VuePressThemeHope: {
+  //       icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+  //       link: "https://theme-hope.vuejs.press",
+  //     },
+  //   },
+  // },
 
   // 加密配置
   encrypt: {
