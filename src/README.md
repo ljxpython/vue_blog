@@ -7,6 +7,7 @@ heroImage: face.png
 heroText: 夹心巧克力杂谈--一个测试小白的成长记
 heroFullScreen: true
 tagline: 你只需一直努力的朝前走，所有的美好都会如约而至
+# bgImage: /assets/images/cover1.jpg
 projects:
   - icon: project
     name: 项目名称
@@ -41,4 +42,4 @@ projects:
 footer: true 
 ---
 
-相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html)。
+<!-- 相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home.html)。 -->

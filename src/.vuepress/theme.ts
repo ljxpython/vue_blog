@@ -12,21 +12,34 @@ const footerICP_HTML = `
 
 export default hopeTheme({
   hostname: "https://github.com/ljxpython",
+  // head: [
+  //   [
+  //     "link",
+  //     {
+  //       rel: "icon",
+  //       href: "face.png",
+  //     },
+  //   ],
+
+  // ],
 
   author: {
     name: "Lee JiaXin",
     url: "https://github.com/ljxpython",
+    email: 'mailto:1030470148@qq.com',
   },
 
   navbarLayout: {
       start: ["Brand"],
-      center: ["Links"],
-      end: ["Language", "Repo", "Outlook", "Search"],
+      center: [],
+      end: ["Search","Links","Language", "Repo", "Outlook" ],
     },
 
-  iconAssets: "fontawesome-with-brands",
+  // iconAssets: "fontawesome-with-brands",
 
   logo: "face.png",
+
+  iconAssets: '//at.alicdn.com/t/c/font_3855310_agk3ojvaptw.css',
 
   repo: "ljxpython/vue_blog.git",
 
@@ -159,9 +172,12 @@ export default hopeTheme({
     // ],
 
     // 
-    watermark: true,
+    watermark: false,
     // 不希望别人复制我的文章
-    copyright: true,
+    copyright: {
+      global: true, // 全局启用
+      disableCopy: true, // 禁用复制
+    },
     
 
     components: {
@@ -252,60 +268,60 @@ export default hopeTheme({
     },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cacheImage: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
+    pwa: {
+      favicon: "/logo.ico",
+      cacheHTML: true,
+      cacheImage: true,
+      appendBase: true,
+      apple: {
+        icon: "/assets/icon/apple-icon-152.png",
+        statusBarColor: "black",
+      },
+      msTile: {
+        image: "/assets/icon/ms-icon-144.png",
+        color: "#ffffff",
+      },
+      manifest: {
+        icons: [
+          {
+            src: "/assets/icon/chrome-mask-512.png",
+            sizes: "512x512",
+            purpose: "maskable",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-mask-192.png",
+            sizes: "192x192",
+            purpose: "maskable",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/assets/icon/chrome-192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+        ],
+        shortcuts: [
+          {
+            name: "Demo",
+            short_name: "Demo",
+            url: "/demo/",
+            icons: [
+              {
+                src: "/assets/icon/guide-maskable.png",
+                sizes: "192x192",
+                purpose: "maskable",
+                type: "image/png",
+              },
+            ],
+          },
+        ],
+      },
+    },
   },
 });
