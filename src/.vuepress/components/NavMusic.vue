@@ -115,7 +115,7 @@ function AddBtnSpin() {
 const LoadMusicList = (callback) => {
   axios({
     method: 'get',
-    url: '//file.mo7.cc/music/list.json',
+    url: '//www.coder-ljx.cn/file/music/music.json',
     params: {},
   }).then((response) => {
     var listData = response.data;

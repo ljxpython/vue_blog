@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vue_export-helper-DlAUqK2U.js";import{r as t,o as n,U as s,w as a,b as c}from"./app-BD8fWOcv.js";const l={},r=c("div",{class:"none"},null,-1);function _(i,f){const e=t("ClientOnly");return n(),s(e,null,{default:a(()=>[r]),_:1})}const m=o(l,[["render",_],["__file","BlogBeautify.vue"]]);export{m as default};
