@@ -9,7 +9,7 @@ export default defineUserConfig({
   locales: {
     '/': {
   lang: "zh-CN",
-  title: "测试漫游记",
+  title: "测试成长笔录",
   description: "探索和分享测试开发相关知识",
     },
     '/en/': {

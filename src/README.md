@@ -3,11 +3,11 @@ home: true
 layout: BlogHome
 icon: home
 title: 首页
-heroImage: face.png
-heroText: 夹心巧克力杂谈--一个测试小白的成长记
+# heroImage: face.png
+heroText: 夹心巧克力的测试笔记
 heroFullScreen: true
 tagline: 你只需一直努力的朝前走，所有的美好都会如约而至
-# bgImage: /assets/images/cover1.jpg
+bgImage: /assets/images/faces.png
 projects:
   - icon: 测试概述
     name: 我对测试的看法

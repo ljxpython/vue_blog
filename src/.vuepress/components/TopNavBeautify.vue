@@ -41,14 +41,14 @@ onMounted(() => {
   nextTick(() => {
     CheckScrollTopClass(); // 切换时顶栏修改
 
-    window.removeEventListener('scroll', () => {});
+    window.removeEventListener('scroll', () => { });
     window.addEventListener('scroll', () => {
       CheckScrollTopClass();
     });
   });
 
   const router = useRouter();
-  router.beforeEach(() => {
+  router.afterEach(() => {
     nextTick(() => {
       setTimeout(() => {
         CheckScrollTopClass(); // 切换时顶栏修改
@@ -58,11 +58,11 @@ onMounted(() => {
 });
 </script>
 
-<!-- <template>
+<template>
   <ClientOnly>
     <div class="none">修改顶栏组件</div>
   </ClientOnly>
-</template> -->
+</template>
 
 <style lang="scss">
 // sidebar 跟随顶栏一起上下移动
@@ -70,6 +70,7 @@ onMounted(() => {
   .vp-sidebar {
     transition: top 0.3s;
   }
+
   .toggle-sidebar-wrapper {
     transition: top 0.3s;
   }
@@ -78,9 +79,11 @@ onMounted(() => {
     .vp-sidebar {
       top: 0;
     }
+
     .toggle-sidebar-wrapper {
       top: 0;
     }
+
     .vp-toc-placeholder {
       top: 0.5rem;
     }
@@ -98,12 +101,14 @@ onMounted(() => {
 .theme-container .vp-page.vp-blog-home {
   padding-top: 0;
 }
+
 // 索引页面顶部调整
 .blog-page-wrapper {
   .vp-blog-main {
     min-height: 710px;
   }
 }
+
 // 首页内容位置调整
 .theme-container.mo7-blog-hero {
   .blog-page-wrapper {
@@ -115,10 +120,12 @@ onMounted(() => {
 
 // 简化搜索按钮
 .search-pro-button {
+
   .search-pro-placeholder,
   .search-pro-key-hints {
     display: none;
   }
+
   border-radius: 100%;
   background-color: transparent;
   border-color: transparent;
@@ -130,6 +137,7 @@ onMounted(() => {
     background: transparent;
   }
 }
+
 .theme-container.mo7-blog-hero.mo7-scroll-top {
   .vp-navbar {
     backdrop-filter: none;
@@ -152,9 +160,11 @@ onMounted(() => {
   }
 
   .theme-container.mo7-scroll-blog-hero-inner {
+
     // 搜索按钮
     .search-pro-button {
       color: #eee;
+
       &:hover {
         color: #2c3e50;
       }
@@ -165,22 +175,30 @@ onMounted(() => {
       color: #eee;
       text-shadow: 0.05rem 0.05rem 0.1rem rgb(0 0 0 / 50%);
       opacity: 0.85;
+
       &:hover {
         color: var(--theme-color-light);
         opacity: 1;
       }
     }
-
+// 导航栏相关文字颜色的设置
     .vp-dropdown-title {
-      color: #eee;
+      color: #f0eaea;
     }
+
     .vp-navbar {
-      .vp-nav-item > .auto-link {
+      .vp-nav-item>.auto-link {
+        color: #f0ebeb;
+      }
+
+      .vp-dropdown-title .i18n-icon {
         color: #eee;
       }
+
       .vp-outlook-button {
         color: #eee;
       }
+
       // 去除下拉图标
       .vp-dropdown-title .arrow {
         display: none;
@@ -212,6 +230,7 @@ onMounted(() => {
 
   .theme-container.mo7-scroll-blog-hero-inner {
     .vp-navbar {
+
       // 去除下拉图标
       .vp-dropdown-title .arrow {
         display: none;

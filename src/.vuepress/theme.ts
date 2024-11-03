@@ -1,8 +1,8 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from './navbar/index.js';
 import { enSidebar, zhSidebar } from './sidebar/index.js';
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+// import navbar from "./navbar.js";
+// import sidebar from "./sidebar.js";
 
 const footerICP_HTML = `
 <a class="footer-icp" href="https://beian.miit.gov.cn" target="_blank">
@@ -14,30 +14,28 @@ const footerICP_HTML = `
 export default hopeTheme({
   hostname: "https://github.com/ljxpython",
 
-
   author: {
-    name: "Lee JiaXin",
+    name: "Li JiaXin",
     url: "https://github.com/ljxpython",
-    email: 'mailto:1030470148@qq.com',
+    email: "mailto:1030470148@qq.com",
   },
 
   navbarLayout: {
-      start: ["Brand"],
-      center: [],
-      end: ["Search","Links","Language", "Repo", "Outlook" ],
-    },
-
-
+    start: ["Brand"],
+    center: [],
+    // end: ["Search", "Links", "Language", "Repo", "Outlook"],
+    end: ["Search", "Links", "Repo", "Outlook"],
+  },
 
   logo: "face.png",
 
   iconAssets: [
     "/fontawesome-with-brands.css",
-    '//at.alicdn.com/t/c/font_3855310_agk3ojvaptw.css'
-  
+    "//at.alicdn.com/t/c/font_3855310_agk3ojvaptw.css",
+    "//at.alicdn.com/t/c/font_4660418_f9hgs1prsb.css",
   ],
 
-  repo: "ljxpython/vue_blog.git",
+  repo: "https://github.com/ljxpython",
 
   docsDir: "src",
   // 全屏
@@ -45,50 +43,57 @@ export default hopeTheme({
 
   // 导航栏
   // navbar,
+  navbar: zhNavbar,
 
   // 侧边栏
   // sidebar,
+  sidebar: zhSidebar,
 
   // 页脚
   footer: footerICP_HTML,
   displayFooter: false,
 
-    locales: {
-    '/': {
-      navbar: zhNavbar,
-      sidebar: zhSidebar,
+  locales: {
+    "/": {
+      // navbar: zhNavbar,
+      // sidebar: zhSidebar,
       blog: {
-    description: "励志做一个什么都会的测试小垃圾",
-    intro: "/intro.html",
-    medias: {
-      Email: "mailto:1030470148@qq.com",
-      // Gitee: "https://gitee.com/lijiaxintest",
-      GitHub: "https://github.com/ljxpython",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
+        description: "享受当下，热爱生活",
+        intro: "/intro.html",
+        medias: {
+          Email: "mailto:1030470148@qq.com",
+          // Gitee: "https://gitee.com/lijiaxintest",
+          GitHub: "https://github.com/ljxpython",
+          VuePressThemeHope: {
+            icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+            link: "https://theme-hope.vuejs.press",
+          },
+          // 自定义的方式
+          // Like: {
+          //   icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+          //   link: "https://theme-hope.vuejs.press",
+          // }
+        },
       },
-    },
-  },
     },
 
-    '/en/': {
-      navbar: enNavbar,
-      sidebar: enSidebar,
-      blog: {
-    description: "To be a test developer who can do anything",
-    intro: "/intro.html",
-    medias: {
-      Email: "mailto:1030470148@qq.com",
-      // Gitee: "https://gitee.com/lijiaxintest",
-      GitHub: "https://github.com/ljxpython",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
-    },
-  },
-    },
+    // "/en/": {
+    //   navbar: enNavbar,
+    //   sidebar: enSidebar,
+    //   blog: {
+    //     description: "To be a test developer who can do anything",
+    //     intro: "/intro.html",
+    //     medias: {
+    //       Email: "mailto:1030470148@qq.com",
+    //       // Gitee: "https://gitee.com/lijiaxintest",
+    //       GitHub: "https://github.com/ljxpython",
+    //       VuePressThemeHope: {
+    //         icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+    //         link: "https://theme-hope.vuejs.press",
+    //       },
+    // },
+    // },
+    // },
   },
 
   // 博客相关
@@ -142,9 +147,9 @@ export default hopeTheme({
   },
 
   // 多语言配置
-  metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
-  },
+  // metaLocales: {
+  //   editLink: "在 GitHub 上编辑此页",
+  // },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
@@ -153,20 +158,20 @@ export default hopeTheme({
   plugins: {
     blog: true,
     // 自定义返回顶部按钮
-      backToTop: {
-        /**
-         * 显示返回顶部按钮的滚动阈值距离（以像素为单位）
-         *
-         * @default 100
-         */
-        threshold: 500,
-        /**
-         * 是否显示滚动进度
-         *
-         * @default true
-         */
-        progress: false,
-      },
+    backToTop: {
+      /**
+       * 显示返回顶部按钮的滚动阈值距离（以像素为单位）
+       *
+       * @default 100
+       */
+      threshold: 500,
+      /**
+       * 是否显示滚动进度
+       *
+       * @default true
+       */
+      progress: false,
+    },
 
     // 启用之前需安装 @waline/client
     // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
@@ -205,18 +210,16 @@ export default hopeTheme({
     //   },
     // ],
 
-    // 
+    //
     watermark: false,
     // 不希望别人复制我的文章
     copyright: {
       global: true, // 全局启用
       disableCopy: true, // 禁用复制
     },
-    
 
     components: {
       components: ["Badge", "VPCard"],
-      
     },
     searchPro: true,
 
@@ -226,7 +229,7 @@ export default hopeTheme({
       repo: "ljxpython/ljxpython.github.io",
       repoId: "R_kgDOMf8baA", // 替换下
       category: "Q&A",
-      categoryId: "DIC_kwDOMf8baM4ChjWA" // 替换下
+      categoryId: "DIC_kwDOMf8baM4ChjWA", // 替换下
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
