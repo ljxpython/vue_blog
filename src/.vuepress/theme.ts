@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from './navbar/index.js';
 import { enSidebar, zhSidebar } from './sidebar/index.js';
+// import "./styles/index.scss"  // 不需要引入,自动引入
 // import navbar from "./navbar.js";
 // import sidebar from "./sidebar.js";
 
@@ -52,6 +53,7 @@ export default hopeTheme({
   // 页脚
   footer: footerICP_HTML,
   displayFooter: false,
+  toc: true,
 
   locales: {
     "/": {

@@ -34,7 +34,7 @@ export const zhSidebar = sidebar({
   //     link: "/qaExperience/",
   //     children: "structure",
   //   },
-    
+
   // ],
   // 关于
   "/about/": [
@@ -220,11 +220,11 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: "structure",
     },
-        {
+    {
       text: "编程杂谈",
       icon: "favoritea",
-      prefix: "autoTest/",
-      link: "/programSummary/",
+      prefix: "program_summary/",
+      link: "/program_summary/",
       collapsible: true,
       children: "structure",
     },

@@ -1,1 +1,15 @@
 // place your custom styles here
+.footer-icp,
+.footer-about {
+    color: black;
+    /* 设置字体颜色为黑色 */
+    text-decoration: none;
+    /* 去掉链接下划线 */
+}
+
+.footer-icp img {
+    vertical-align: middle;
+    /* 垂直对齐图像 */
+    margin-right: 5px;
+    /* 图像与文字之间的间距 */
+}

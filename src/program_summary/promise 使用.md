@@ -6,17 +6,18 @@ tag:
   - 前端
   - TS
 
+toc: true
 
 isOriginal: true
 disableCopy: true
 date: 2024-03-04 16:17:00
 
-permalink: /programSummary/promise使用.html
+permalink: /programSummary/promiseuse.html
 ---
 
 # Promise 使用
 
-
+[[toc]]
 
 参考视频:[https://www.bilibili.com/video/BV1454y1R7vj/?spm_id_from=333.337.search-card.all.click&vd_source=06f814e4ba93cc08042f2aa48651e706](https://www.bilibili.com/video/BV1454y1R7vj/?spm_id_from=333.337.search-card.all.click&vd_source=06f814e4ba93cc08042f2aa48651e706)
 
