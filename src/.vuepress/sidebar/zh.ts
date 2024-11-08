@@ -220,6 +220,14 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: "structure",
     },
+        {
+      text: "编程杂谈",
+      icon: "favoritea",
+      prefix: "autoTest/",
+      link: "/programSummary/",
+      collapsible: true,
+      children: "structure",
+    },
 
     // {
     //   text: '收藏',

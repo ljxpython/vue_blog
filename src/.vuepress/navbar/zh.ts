@@ -6,6 +6,7 @@ export const zhNavbar = navbar([
     icon: "sort",
     children: [
       { text: "测试经验", icon: "home", link: "/qaexperience/" },
+      {text:"编程",icon:"code",link:"/programSummary/"},
       { text: "面试经验", icon: "home", link: "/interview/" },],
   },
   {
