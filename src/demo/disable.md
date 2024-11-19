@@ -21,6 +21,8 @@ comment: false
 footer: false
 
 backtotop: false
+# 这个设置后，不能被检索和展示在前端
+article: false
 ---
 
 你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。

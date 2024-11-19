@@ -6,6 +6,8 @@ category:
   - 指南
 tag:
   - 布局
+# 这个设置后，不能被检索和展示在前端
+article: false
 ---
 
 布局包括:

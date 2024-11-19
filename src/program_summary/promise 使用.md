@@ -7,6 +7,7 @@ tag:
   - TS
 
 toc: true
+article: false
 
 isOriginal: true
 disableCopy: true

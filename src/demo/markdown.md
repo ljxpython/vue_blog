@@ -6,6 +6,8 @@ category:
   - 使用指南
 tag:
   - Markdown
+# 这个设置后，不能被检索和展示在前端
+article: false
 ---
 
 VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
