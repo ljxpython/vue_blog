@@ -1,17 +1,11 @@
 ---
-icon: edit
-date: 2022-12-30
+icon: developer
+
+# pageInfo: ['Author', 'PageView']
+
 index: false
-permalink: /qaExperience/
+
+permalink: /qaexperience/
 ---
-
-# 测试经验
-
-::: tip
-这里记录了一些测试经验。
-:::
-
----
-<Catalog base="/qaExperience/" :depth="2"/>
-
----
+# 测试杂谈
+<Catalog base='/qaexperience/' />

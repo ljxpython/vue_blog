@@ -5,7 +5,7 @@ index: false
 permalink: /stressStabilityTest/
 ---
 
-# 测试经验
+# 性能测试
 
 ::: tip
 这里记录了一些测试经验。
